@@ -10,11 +10,19 @@ function Nav() {
                 <h1>Benjamin Holt</h1>
             </Link>
             <nav className="">
-                <ul className="flex justify-">
-                    <li>About Me</li>
-                    <li>My Work</li>
-                    <li>Contact Me</li>
-                    <li>Resume</li>
+                <ul className="flex justify-around">
+                    <Link to="/about-me">
+                        <li>About Me</li>
+                    </Link>
+                    <Link to="/portfolio">
+                        <li>My Portfolio</li>
+                    </Link>
+                    <Link to="/contact">
+                        <li>Contact Me</li>
+                    </Link>
+                    <Link to="/resume">
+                        <li>Resume</li>
+                    </Link>
                 </ul>
             </nav>
         </header>
