@@ -3,10 +3,10 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {
+function Header() {
     return (
         <header className="flex justify-around">
-            <Link to="/" className="grow-0">
+            <Link to="/" className="">
                 <h1>Benjamin Holt</h1>
             </Link>
             <nav className="">
@@ -29,4 +29,4 @@ function Nav() {
     );
 }
 
-export default Nav;
+export default Header;

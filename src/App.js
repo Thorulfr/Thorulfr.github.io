@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Component imports
-import Nav from './components/Nav';
+import Nav from './components/Header';
 import Content from './components/Content';
 import Footer from './components/Footer';
 
@@ -17,11 +17,10 @@ import Resume from './pages/Resume';
 function App() {
     return (
         <Router>
-            <div>
+            <div className="flex flex-col min-h-screen">
                 <Nav />
-                <div>
+                <div className="grow">
                     <Routes>
-                        <Route path="/" element={<Home />} />
                         <Route path="/" element={<Home />} />
                         <Route path="/about-me" element={<AboutMe />} />
                         <Route path="/contact" element={<Contact />} />

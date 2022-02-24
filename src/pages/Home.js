@@ -2,7 +2,7 @@
 import React from 'react';
 
 const Home = () => {
-    return <main></main>;
+    return <main className="">Hi</main>;
 };
 
 export default Home;
