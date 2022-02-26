@@ -24,10 +24,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
             {/* Header top */}
             <div
                 id="header-top"
-                className="w-full flex justify-between items-center 2xl:grid 2xl:grid-cols-3 p-2 transition-all duration-300 translate-y-4"
+                className="w-full flex justify-between items-center p-2 transition-all duration-300 translate-y-4"
             >
                 {/* Logo for mobile */}
-                <div className="flex justify-center items-center pl-2 text-2xl h-10 2xl:hidden">
+                <div className="flex justify-center items-center pl-2 text-2xl h-10 ">
                     {localStorage.theme === 'light' ? (
                         <img
                             src="/assets/images/logo.svg"
@@ -85,7 +85,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     className="flex justify-around pb-1 text-theme-purple -translate-x-full transition-all duration-300"
                 >
                     <li>
-                        <Link to="/about-me">About</Link>
+                        <Link to="/">About</Link>
                     </li>
                     <li>
                         <Link to="/portfolio">Work</Link>
