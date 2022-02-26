@@ -85,16 +85,36 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     className="flex justify-around pb-1 text-theme-purple -translate-x-full transition-all duration-300"
                 >
                     <li>
-                        <Link to="/">About</Link>
+                        <Link
+                            to="/"
+                            className="hover:text-theme-orange transition-all duration-300"
+                        >
+                            About
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/portfolio">Work</Link>
+                        <Link
+                            to="/portfolio"
+                            className="hover:text-theme-orange transition-all duration-300"
+                        >
+                            Work
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/resume">Resume</Link>
+                        <Link
+                            to="/resume"
+                            className="hover:text-theme-orange transition-all duration-300"
+                        >
+                            Resume
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <Link
+                            to="/contact"
+                            className="hover:text-theme-orange transition-all duration-300"
+                        >
+                            Contact
+                        </Link>
                     </li>
                 </ul>
             </nav>
