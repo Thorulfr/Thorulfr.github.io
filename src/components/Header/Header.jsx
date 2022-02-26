@@ -14,6 +14,9 @@ const Header = ({ currentPage, setCurrentPage }) => {
             .getElementById('hamburger-bottom')
             .classList.toggle('button-transform-bottom-active');
         document.getElementById('nav-list').classList.toggle('navlist-active');
+        document
+            .getElementById('header-top')
+            .classList.toggle('navlist-active');
         // document.getElementById('nav-list').classList.toggle('max-h-[0px]');
         // document.getElementById('nav-list').classList.toggle('max-h-[200px]');
         // document.getElementById('toggle-container').classList.toggle('hidden');
@@ -28,7 +31,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header id="nav-header" className="shadow-sm bg-theme-lilac/[.1]">
             {/* Header top */}
-            <div className="w-full flex justify-between items-center 2xl:grid 2xl:grid-cols-3 p-2">
+            <div
+                id="header-top"
+                className="w-full flex justify-between items-center 2xl:grid 2xl:grid-cols-3 p-2 transition-all duration-300 translate-y-3"
+            >
                 {/* Logo for mobile */}
                 <div className="flex justify-center items-center pl-2 text-2xl h-10 2xl:hidden">
                     {localStorage.theme === 'light' ? (
