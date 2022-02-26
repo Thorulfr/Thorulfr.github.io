@@ -20,11 +20,11 @@ const Header = ({ currentPage, setCurrentPage }) => {
     };
 
     return (
-        <header id="nav-header" className="shadow-sm bg-theme-lilac/[.1]">
+        <header id="nav-header" className="shadow-sm bg-theme-lilac/[.20]">
             {/* Header top */}
             <div
                 id="header-top"
-                className="w-full flex justify-between items-center 2xl:grid 2xl:grid-cols-3 p-2 transition-all duration-300 translate-y-3"
+                className="w-full flex justify-between items-center 2xl:grid 2xl:grid-cols-3 p-2 transition-all duration-300 translate-y-4"
             >
                 {/* Logo for mobile */}
                 <div className="flex justify-center items-center pl-2 text-2xl h-10 2xl:hidden">
@@ -82,7 +82,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
             <nav className="w-full">
                 <ul
                     id="nav-list"
-                    className="flex justify-around text-theme-purple -translate-x-full transition-all duration-300"
+                    className="flex justify-around pb-1 text-theme-purple -translate-x-full transition-all duration-300"
                 >
                     <li>
                         <Link to="/about-me">About</Link>

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="bg-theme-lilac/[.35]">
+        <footer className="bg-theme-lilac/[.30]">
             <div className="text-center m-3">
                 © 2022{' '}
                 <a
