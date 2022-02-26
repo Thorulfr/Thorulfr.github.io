@@ -17,15 +17,6 @@ const Header = ({ currentPage, setCurrentPage }) => {
         document
             .getElementById('header-top')
             .classList.toggle('navlist-active');
-        // document.getElementById('nav-list').classList.toggle('max-h-[0px]');
-        // document.getElementById('nav-list').classList.toggle('max-h-[200px]');
-        // document.getElementById('toggle-container').classList.toggle('hidden');
-
-        // document.getElementById('menu-tag').classList.toggle('text-theme-red');
-        // let navLinks = document.getElementsByClassName('nav-link');
-        // for (let i = 0; i < navLinks.length; i++) {
-        //     navLinks[i].classList.toggle('nav-active');
-        // }
     };
 
     return (
