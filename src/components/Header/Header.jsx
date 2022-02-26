@@ -13,9 +13,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
         document
             .getElementById('hamburger-bottom')
             .classList.toggle('button-transform-bottom-active');
-        // document
-        //     .getElementById('nav-list')
-        //     .classList.toggle('navbar-nav-active');
+        document.getElementById('nav-list').classList.toggle('navlist-active');
         // document.getElementById('nav-list').classList.toggle('max-h-[0px]');
         // document.getElementById('nav-list').classList.toggle('max-h-[200px]');
         // document.getElementById('toggle-container').classList.toggle('hidden');
@@ -28,7 +26,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
     };
 
     return (
-        <header id="nav-header" className="border border-indigo-600">
+        <header id="nav-header" className="shadow-sm bg-theme-lilac/[.1]">
             {/* Header top */}
             <div className="w-full flex justify-between items-center 2xl:grid 2xl:grid-cols-3 p-2">
                 {/* Logo for mobile */}
@@ -51,7 +49,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 </div>
                 {/* Me + home link */}
                 <div>
-                    <Link to="/" className="text-theme-pink">
+                    <Link to="/" className="text-theme-pink text-lg">
                         Benjamin Holt
                     </Link>
                 </div>
@@ -87,7 +85,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
             <nav className="w-full">
                 <ul
                     id="nav-list"
-                    className="flex justify-around text-theme-purple"
+                    className="flex justify-around text-theme-purple -translate-x-full transition-all duration-300"
                 >
                     <li>
                         <Link to="/about-me">About</Link>
