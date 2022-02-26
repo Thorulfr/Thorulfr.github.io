@@ -31,7 +31,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
     return (
         <header id="nav-header">
             {/* Colored div to block the sliding links */}
-            <div className="absolute w-full h-28 z-10 transition duration-200 2xl:w-16 2xl:h-10 2xl:left-0 2xl:top-4"></div>
+            {/* <div className="absolute w-full h-28 z-10 transition duration-200 2xl:w-16 2xl:h-10 2xl:left-0 2xl:top-4"></div> */}
             {/* Actual header */}
             <nav className="w-full border border-indigo-600">
                 <div className="w-full flex justify-between items-center 2xl:grid 2xl:grid-cols-3 p-2">
@@ -53,14 +53,15 @@ const Header = ({ currentPage, setCurrentPage }) => {
                             />
                         )}
                     </div>
+                    <div>Benjamin Holt</div>
                     <div className="">
                         <button
-                            className="w-10 h-10 flex relative justify-center items-center focus:outline-none z-20 text-theme-purple"
+                            className="w-10 h-10 flex justify-center items-center focus:outline-none z-20 text-theme-purple"
                             onClick={hamburgerToggle}
                         >
                             <span className="sr-only">Open main menu</span>
                             {/* Hamburger elements */}
-                            <div className="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                            <div className="block w-5 ">
                                 <span
                                     id="hamburger-top"
                                     aria-hidden="true"

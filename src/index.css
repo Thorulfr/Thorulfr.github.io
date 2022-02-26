@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: bold;
+}
+
+/* HEADER STYLES */
 /* Hamburger transition styles */
 .button-transform-top-active {
     transform: translateY(0.125rem);
@@ -17,4 +24,8 @@
     transform: translateY(-0.125rem);
     opacity: 0;
     color: #e83f6f;
+}
+
+.navlist-active {
+    transform: unset !important;
 }
