@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hamburger transition styles */
+.button-transform-top-active {
+    transform: translateY(0.125rem);
+    color: #e83f6f;
+}
+
+.button-transform-middle-active {
+    transform: rotate(90deg);
+    color: #e83f6f;
+}
+
+.button-transform-bottom-active {
+    transform: translateY(-0.125rem);
+    opacity: 0;
+    color: #e83f6f;
+}
