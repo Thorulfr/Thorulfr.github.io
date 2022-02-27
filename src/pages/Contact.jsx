@@ -1,6 +1,9 @@
 // Imports
 import React, { useState } from 'react';
 
+// Utility imports
+import { validateEmail } from '../utils/helpers';
+
 const Contact = () => {
     // Initialize useState to control inputs
     const [formState, setFormState] = useState({
@@ -12,9 +15,33 @@ const Contact = () => {
     // Destructure defaults
     const { name, email, message } = formState;
 
+    // Initialize useState to control error messages
+    const [errorMessage, setErrorMessage] = useState('');
+
     // Handle changes to input fields
     function handleChange(evt) {
+        // Email validation
+        if (evt.target.name === 'email') {
+            const isValid = validateEmail(evt.target.value);
+            if (!isValid) {
+                setErrorMessage('Please enter a valid e-mail address!');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!evt.target.value.length) {
+                setErrorMessage(`${evt.target.name} is required!`);
+            } else {
+                setErrorMessage('');
+            }
+        }
         setFormState({ ...formState, [evt.target.name]: evt.target.value });
+    }
+
+    // Handle form submission
+    function handleSubmit(evt) {
+        evt.preventDefault();
+        console.log(formState);
     }
 
     return (
@@ -22,12 +49,12 @@ const Contact = () => {
             <div className="m-4 px-3">
                 <p className="text-justify">
                     Want to collaborate? Looking for a killer website? Just
-                    wanna talk about vikings and runes? Shoot me a message below
-                    and I'll get back to you ASAP!
+                    wanna talk about vikings and runes? Shoot me a message and
+                    I'll get back to you ASAP!
                 </p>
             </div>
             <div className="m-4 p-6 rounded-bl-2xl rounded-tr-2xl shadow-sm bg-theme-lilac/[.20]">
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="mb-6">
                         <input
                             type="text"
@@ -35,7 +62,7 @@ const Contact = () => {
                             name="name"
                             placeholder="Name"
                             defaultValue={name}
-                            onChange={handleChange}
+                            onBlur={handleChange}
                             className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
                         ></input>
                     </div>
@@ -46,7 +73,7 @@ const Contact = () => {
                             name="email"
                             placeholder="E-mail Address"
                             defaultValue={email}
-                            onChange={handleChange}
+                            onBlur={handleChange}
                             className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
                         />
                     </div>
@@ -57,10 +84,15 @@ const Contact = () => {
                             rows="4"
                             placeholder="Your Message"
                             defaultValue={message}
-                            onChange={handleChange}
+                            onBlur={handleChange}
                             className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
                         />
                     </div>
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
                     <button
                         type="submit"
                         className="w-full px-6 py-2.5 bg-theme-purple text-theme-pink font-black rounded shadow hover:text-theme-orange hover:shadow-lg focus:outline-none transition duration-300 ease-in-out"
