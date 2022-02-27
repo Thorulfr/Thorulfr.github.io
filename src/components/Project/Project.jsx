@@ -4,7 +4,6 @@ import React from 'react';
 function Project(project) {
     return (
         <div className=" m-2 rounded-lg flex flex-col justify-around items-center">
-            {/* <p>{project.project.description}</p>*/}
             <span className="text-lg text-center m-1 underline underline-offset-1 decoration-1">
                 {project.project.name}
             </span>
