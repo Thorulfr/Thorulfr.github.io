@@ -19,7 +19,7 @@ const numberOneFan = new Project(
     'Full-stack music app',
     'https://github.com/Thorulfr/no1fan',
     'https://no1fan.herokuapp.com/',
-    'assets/screenshots/no-1-fan-screenshot.png.'
+    'assets/screenshots/no-1-fan-screenshot.png'
 );
 
 const socialNetworkAPI = new Project(

@@ -3,12 +3,16 @@ import React from 'react';
 
 function Project(project) {
     return (
-        <div className="shadow-sm m-2 rounded-lg flex flex-col justify-around items-center">
+        <div className=" m-2 rounded-lg flex flex-col justify-around items-center">
             {/* <p>{project.project.description}</p>*/}
             <span className="text-lg text-center m-1 underline underline-offset-1 decoration-1">
                 {project.project.name}
             </span>
-            <img src={project.project.imagePath} alt="Application screenshot" />
+            <img
+                src={project.project.imagePath}
+                alt="Application screenshot"
+                className="rounded-bl-2xl rounded-tr-2xl"
+            />
             <p className="text-center">{project.project.description}</p>
             <div className="w-1/2 flex justify-evenly items-center p-1 mb-1">
                 <a

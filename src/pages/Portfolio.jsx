@@ -9,9 +9,13 @@ import projects from '../utils/projects';
 
 const Portfolio = () => {
     return (
-        <main>
-            <div>Portfolio</div>
+        <main className="">
+            <Project project={projects.typePlusPlus} />
+            <Project project={projects.numberOneFan} />
+            <Project project={projects.streamability} />
+            <Project project={projects.weatherDashboard} />
             <Project project={projects.budgetTracker} />
+            <Project project={projects.socialNetworkAPI} />
         </main>
     );
 };
