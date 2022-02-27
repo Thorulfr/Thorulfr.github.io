@@ -29,3 +29,10 @@ body {
 .navlist-active {
     transform: unset !important;
 }
+
+/* IMAGE STYLES */
+/* Overlay */
+.overlay {
+    position: absolute;
+    left: 0;
+}
