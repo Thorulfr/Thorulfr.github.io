@@ -12,7 +12,7 @@ function Footer() {
                     <img
                         src="assets/images/linkedin-logo.svg"
                         alt="LinkedIn logo"
-                        className="h-9"
+                        className="h-10"
                     />
                 </a>
                 <a
