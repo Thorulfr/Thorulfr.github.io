@@ -3,8 +3,15 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <main>
-            <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md">
+        <main className="grow">
+            <div className="m-4 px-3">
+                <p className="text-justify">
+                    Want to collaborate? Looking for a killer website? Just
+                    wanna talk about vikings and runes? Shoot me a message below
+                    and I'll get back to you ASAP!
+                </p>
+            </div>
+            <div className="m-4 p-6 rounded-bl-2xl rounded-tr-2xl shadow-sm bg-theme-lilac/[.20]">
                 <form>
                     <div className="form-group mb-6">
                         <input
