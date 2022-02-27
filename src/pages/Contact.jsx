@@ -1,7 +1,22 @@
 // Imports
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+    // Initialize useState to control inputs
+    const [formState, setFormState] = useState({
+        name: '',
+        email: '',
+        message: '',
+    });
+
+    // Destructure defaults
+    const { name, email, message } = formState;
+
+    // Handle changes to input fields
+    function handleChange(evt) {
+        setFormState({ ...formState, [evt.target.name]: evt.target.value });
+    }
+
     return (
         <main className="grow text-theme-purple">
             <div className="m-4 px-3">
@@ -17,7 +32,10 @@ const Contact = () => {
                         <input
                             type="text"
                             id="nameInput"
+                            name="name"
                             placeholder="Name"
+                            defaultValue={name}
+                            onChange={handleChange}
                             className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
                         ></input>
                     </div>
@@ -25,15 +43,21 @@ const Contact = () => {
                         <input
                             type="email"
                             id="emailInput"
+                            name="email"
                             placeholder="E-mail Address"
+                            defaultValue={email}
+                            onChange={handleChange}
                             className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
                         />
                     </div>
                     <div className="mb-6">
                         <textarea
                             id="messageInput"
+                            name="message"
                             rows="4"
                             placeholder="Your Message"
+                            defaultValue={message}
+                            onChange={handleChange}
                             className="w-full px-3 py-1.5 rounded font-black focus:outline-none"
                         />
                     </div>
