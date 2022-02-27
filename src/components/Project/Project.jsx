@@ -10,7 +10,7 @@ function Project(project) {
             <img
                 src={project.project.imagePath}
                 alt="Application screenshot"
-                className="rounded-bl-2xl rounded-tr-2xl"
+                className="m-3 rounded-bl-2xl rounded-tr-2xl"
             />
             <p className="text-center">{project.project.description}</p>
             <div className="w-1/2 flex justify-evenly items-center p-1 mb-1">
