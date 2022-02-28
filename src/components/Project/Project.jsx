@@ -3,7 +3,7 @@ import React from 'react';
 
 function Project(project) {
     return (
-        <div className="m-2 rounded-lg flex flex-col justify-around items-center xl:px-16">
+        <div className="m-2 rounded-lg flex flex-col justify-around items-center xl:px-20 2xl:px-40">
             <span className="text-lg text-center m-1 underline underline-offset-1 decoration-1 lg:text-xl">
                 {project.project.name}
             </span>
@@ -21,7 +21,7 @@ function Project(project) {
                 >
                     <img
                         src="assets/images/github-logo.svg"
-                        className="h-8 w-8"
+                        className="h-8 w-8 transition-all duration-300 hover:opacity-75"
                         alt="Github logo"
                     />
                 </a>
@@ -32,7 +32,7 @@ function Project(project) {
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
+                        className="h-5 w-5 transition-all duration-300 hover:opacity-75"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"

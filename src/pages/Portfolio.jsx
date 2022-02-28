@@ -9,7 +9,7 @@ import projects from '../utils/projects';
 
 const Portfolio = () => {
     return (
-        <main className="px-4 md:px-12 lg:px-32 xl:grid xl:grid-cols-2 xl:my-6">
+        <main className="px-4 text-theme-purple md:px-12 lg:px-32 xl:grid xl:grid-cols-2 xl:my-6">
             <div>
                 <Project project={projects.typePlusPlus} />
                 <div className="border-2 mx-14 rounded-full"></div>

@@ -8,6 +8,7 @@ function Footer() {
                     href="https://www.linkedin.com/in/benjamin-thorulfr-holt/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="transition-all duration-300 hover:opacity-75"
                 >
                     <img
                         src="assets/images/linkedin-logo.svg"
@@ -19,6 +20,7 @@ function Footer() {
                     href="https://github.com/Thorulfr"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="transition-all duration-300 hover:opacity-75"
                 >
                     <img
                         src="assets/images/github-logo-large.svg"
@@ -30,6 +32,7 @@ function Footer() {
                     href="https://stackoverflow.com/users/16655462/thorulfr?tab=profile"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="transition-all duration-300 hover:opacity-75"
                 >
                     <svg aria-hidden="true" height="2rem" viewBox="0 0 32 37">
                         <path
