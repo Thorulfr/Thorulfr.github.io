@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/thorulfr.github.io/static/css/main.2d9baa47.css",
+    "main.js": "/thorulfr.github.io/static/js/main.0edbcb85.js",
+    "static/js/787.596b2222.chunk.js": "/thorulfr.github.io/static/js/787.596b2222.chunk.js",
+    "index.html": "/thorulfr.github.io/index.html",
+    "main.2d9baa47.css.map": "/thorulfr.github.io/static/css/main.2d9baa47.css.map",
+    "main.0edbcb85.js.map": "/thorulfr.github.io/static/js/main.0edbcb85.js.map",
+    "787.596b2222.chunk.js.map": "/thorulfr.github.io/static/js/787.596b2222.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d9baa47.css",
+    "static/js/main.0edbcb85.js"
+  ]
+}
