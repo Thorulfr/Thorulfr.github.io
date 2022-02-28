@@ -87,7 +87,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     <li>
                         <Link
                             to="/"
-                            className="hover:text-theme-orange transition-all duration-300"
+                            onClick={() => setCurrentPage('/')}
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === '/' && 'text-theme-orange'
+                            }`}
                         >
                             About
                         </Link>
@@ -95,7 +98,11 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     <li>
                         <Link
                             to="/portfolio"
-                            className="hover:text-theme-orange transition-all duration-300"
+                            onClick={() => setCurrentPage('portfolio')}
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === 'portfolio' &&
+                                'text-theme-orange'
+                            }`}
                         >
                             Work
                         </Link>
@@ -103,7 +110,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     <li>
                         <Link
                             to="/resume"
-                            className="hover:text-theme-orange transition-all duration-300"
+                            onClick={() => setCurrentPage('resume')}
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === 'resume' && 'text-theme-orange'
+                            }`}
                         >
                             Resume
                         </Link>
@@ -111,7 +121,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     <li>
                         <Link
                             to="/contact"
-                            className="hover:text-theme-orange transition-all duration-300"
+                            onClick={() => setCurrentPage('contact')}
+                            className={`hover:text-theme-orange transition-all duration-300 ${
+                                currentPage === 'contact' && 'text-theme-orange'
+                            }`}
                         >
                             Contact
                         </Link>

@@ -1,4 +1,5 @@
 // Imports
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Component imports
@@ -12,10 +13,14 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
 function App() {
+    const [currentPage, setCurrentPage] = useState('/');
     return (
         <Router>
             <div className="flex flex-col min-h-screen">
-                <Nav />
+                <Nav
+                    currentPage={currentPage}
+                    setCurrentPage={setCurrentPage}
+                />
                 <div className="grow flex">
                     <Routes>
                         <Route path="/" element={<AboutMe />} />

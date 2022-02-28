@@ -30,7 +30,7 @@ const AboutMe = () => {
                 </p>
                 <p className="py-4">
                     Also, my degree officially bestows upon me the title 'Nordic
-                    Master of Viking and Medieval Norse Studies. Ask me about
+                    Master of Viking and Medieval Norse Studies'. Ask me about
                     it!
                 </p>
             </div>
