@@ -46,7 +46,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 </div>
                 {/* Me + home link */}
                 <div>
-                    <Link to="/" className="text-theme-pink text-lg">
+                    <Link
+                        to="/"
+                        className="text-theme-pink text-lg md:text-2xl"
+                    >
                         Benjamin Holt
                     </Link>
                 </div>
@@ -79,10 +82,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
                 </div>
             </div>
             {/* Header bottom/Nav */}
-            <nav className="w-full">
+            <nav className="w-full flex justify-center">
                 <ul
                     id="nav-list"
-                    className="flex justify-around pb-1 text-theme-purple -translate-x-full transition-all duration-300"
+                    className="w-full flex justify-around pb-1 text-theme-purple -translate-x-full transition-all duration-300 sm:w-4/5 sm:-translate-x-[250%] md:text-lg"
                 >
                     <li>
                         <Link

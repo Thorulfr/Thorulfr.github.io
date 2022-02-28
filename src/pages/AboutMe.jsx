@@ -3,13 +3,13 @@ import React from 'react';
 
 const AboutMe = () => {
     return (
-        <main className="flex flex-col">
+        <main className="flex flex-col my-6 sm:items-center sm:justify-center">
             <img
                 src="assets/images/self-portrait.jpg"
                 alt="Benjamin in a lava field in northern Iceland"
-                className="my-6 mx-12 rounded-bl-2xl rounded-tr-2xl"
+                className="mb-6 mx-12 rounded-bl-2xl rounded-tr-2xl sm:w-2/3 md:w-1/2"
             ></img>
-            <div className="text-justify px-6">
+            <div className="text-justify px-6 sm:px-12">
                 <p>
                     I'm a full-stack web developer with a penchant for creating
                     especially pleasing user experiences. I've recently
