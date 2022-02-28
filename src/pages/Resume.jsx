@@ -3,7 +3,7 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <main className="grow flex flex-col justify-around items-center px-4 md:px-12">
+        <main className="grow flex flex-col justify-around items-center px-4 md:px-12 lg:px-32">
             <div className="mt-4 flex flex-col justify-around items-center text-theme-purple">
                 <p className="mb-4">My proficiencies:</p>
                 <div className="flex flex-wrap justify-center">

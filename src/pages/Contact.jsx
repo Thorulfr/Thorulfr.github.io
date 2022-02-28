@@ -45,8 +45,8 @@ const Contact = () => {
     }
 
     return (
-        <main className="grow text-theme-purple px-4 md:px-12 flex flex-col sm:items-center sm:justify-center">
-            <div className="m-4">
+        <main className="grow text-theme-purple px-4 flex flex-col sm:items-center sm:justify-center md:px-12 lg:px-32">
+            <div className="m-4 px-12 xl:px-16">
                 <p className="text-justify">
                     Want to collaborate? Looking for a killer website? Just
                     wanna talk about vikings and runes? Shoot me a message and
