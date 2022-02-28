@@ -3,9 +3,9 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <main className="grow flex flex-col justify-around items-center px-4 md:px-12 lg:px-32">
+        <main className="grow flex flex-col justify-around items-center px-4 md:px-12 lg:px-32 lg:text-xl">
             <div className="mt-4 flex flex-col justify-around items-center text-theme-purple">
-                <p className="mb-4">My proficiencies:</p>
+                <p className="mb-4">My proficiencies</p>
                 <div className="flex flex-wrap justify-center">
                     <img
                         src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"

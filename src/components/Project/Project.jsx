@@ -4,7 +4,7 @@ import React from 'react';
 function Project(project) {
     return (
         <div className="m-2 rounded-lg flex flex-col justify-around items-center xl:px-16">
-            <span className="text-lg text-center m-1 underline underline-offset-1 decoration-1">
+            <span className="text-lg text-center m-1 underline underline-offset-1 decoration-1 lg:text-xl">
                 {project.project.name}
             </span>
             <img
