@@ -9,7 +9,7 @@ const AboutMe = () => {
                 alt="Benjamin in a lava field in northern Iceland"
                 className="mb-6 mx-12 rounded-bl-2xl rounded-tr-2xl sm:w-2/3 md:w-1/2"
             ></img>
-            <div className="text-justify px-6 sm:px-12">
+            <div className="text-justify px-6 sm:px-12 2xl:px-60">
                 <p>
                     I'm a full-stack web developer with a penchant for creating
                     especially pleasing user experiences. I've recently

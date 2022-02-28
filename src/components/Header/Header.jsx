@@ -85,7 +85,7 @@ const Header = ({ currentPage, setCurrentPage }) => {
             <nav className="w-full flex justify-center">
                 <ul
                     id="nav-list"
-                    className="w-full flex justify-around pb-1 text-theme-purple -translate-x-full transition-all duration-300 sm:w-4/5 sm:-translate-x-[250%] md:text-lg"
+                    className="w-full flex justify-around pb-1 text-theme-purple -translate-x-full transition-all duration-300 sm:w-4/5 sm:-translate-x-[250%] md:text-lg xl:w-2/3 2xl:w-1/2"
                 >
                     <li>
                         <Link
