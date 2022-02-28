@@ -4,7 +4,7 @@ import React from 'react';
 const Resume = () => {
     return (
         <main className="grow flex flex-col justify-around items-center">
-            <div className="mt-4 flex flex-col justify-around items-center">
+            <div className="mt-4 flex flex-col justify-around items-center text-theme-purple">
                 <p className="mb-4">My proficiencies:</p>
                 <div className="flex flex-wrap justify-center">
                     <img
@@ -109,7 +109,7 @@ const Resume = () => {
                     />
                 </div>
             </div>
-            <div className="grow w-full m-4 flex flex-col justify-around items-center">
+            <div className="grow w-full m-4 flex flex-col justify-around items-center text-theme-purple">
                 <p className="mb-4">Resume</p>
                 <iframe
                     src="assets/CV.pdf#view=fitH"
