@@ -54,7 +54,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Deployed Application
 
-[GitHub Pages Deployment](https://thorulfr.github.io/)
+[GitHub Pages Deployment](https://thorulfr.github.io/portfolio)
 
 ## Screenshot
 
