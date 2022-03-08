@@ -100,11 +100,10 @@ const Header = ({ currentPage, setCurrentPage }) => {
                     </li>
                     <li>
                         <Link
-                            to="/portfolio"
-                            onClick={() => setCurrentPage('portfolio')}
+                            to="/work"
+                            onClick={() => setCurrentPage('work')}
                             className={`hover:text-theme-orange transition-all duration-300 ${
-                                currentPage === 'portfolio' &&
-                                'text-theme-orange'
+                                currentPage === 'work' && 'text-theme-orange'
                             }`}
                         >
                             Work

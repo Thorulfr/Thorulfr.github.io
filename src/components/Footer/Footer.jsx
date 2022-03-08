@@ -24,7 +24,7 @@ function Footer() {
                 >
                     <img
                         src="assets/images/github-logo-large.svg"
-                        alt="LinkedIn logo"
+                        alt="GitHub logo"
                         className="h-8"
                     />
                 </a>

@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 // Page imports
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
+import Work from './pages/Work';
 import Resume from './pages/Resume';
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<AboutMe />} />
                         <Route path="/contact" element={<Contact />} />
-                        <Route path="/portfolio" element={<Portfolio />} />
+                        <Route path="/work" element={<Work />} />
                         <Route path="/resume" element={<Resume />} />
                     </Routes>
                 </div>

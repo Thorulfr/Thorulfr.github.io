@@ -7,7 +7,7 @@ import Project from '../components/Project';
 // Utility Imports
 import projects from '../utils/projects';
 
-const Portfolio = () => {
+const Work = () => {
     return (
         <main className="px-4 text-theme-purple md:px-12 lg:px-32 xl:grid xl:grid-cols-2 xl:my-6">
             <div>
@@ -35,4 +35,4 @@ const Portfolio = () => {
     );
 };
 
-export default Portfolio;
+export default Work;
